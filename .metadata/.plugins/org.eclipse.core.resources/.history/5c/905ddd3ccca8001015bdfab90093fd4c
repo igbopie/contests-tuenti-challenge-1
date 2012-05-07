@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+/**
+ * This a solution for the ninesquare problem.
+ * @author ignaciobonapiedrabuena
+ *
+ */
+public class Solution {
+
+
+	
+
+	static boolean hasConflicts(int[] starts, int[] ends) {
+	        //O(n^2)
+	    for(int meetingA=0;meetingA<starts.length;meetingA++){
+	        for(int meetingB=0;meetingB<starts.length;meetingB++){    
+	            if( meetingA!=meetingB&&
+	                conflict(starts[meetingA],ends[meetingA],starts[meetingB],ends[meetingB])
+	            ){
+	                // meeting A start A date and finish A date
+	                // meeting B start B date and finish B date
+	                // A end time is after B start time
+	                return true;
+	            }
+	        }    
+	    }
+	    return false;
+	}
+
+
+	static boolean conflict(int startA,int endA,int startB,int endB){
+	     return startA<startB&&endA>startB;
+	}
+	
+	
+	public static void main(String[]args){
+		int[]starts = {1,5};
+		int[]ends =   {6,7};
+		System.out.println(hasConflicts(starts,ends));
+	}
+	
+
+}

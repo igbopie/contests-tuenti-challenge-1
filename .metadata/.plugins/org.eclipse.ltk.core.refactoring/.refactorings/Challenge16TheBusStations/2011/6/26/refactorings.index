@@ -1,0 +1,17 @@
+1308478818768	Rename package 'net.tuenti.contest.igbopie.thestargateproblem'
+1308478824883	Rename package 'net.tuenti.contest.igbopie.thebusstation'
+1308478864265	Rename field 'timeCost'
+1308478882045	Rename method 'getTimeCost'
+1308478906218	Rename method 'setTimeCost'
+1308478943902	Rename type 'TheStargate'
+1308478955056	Rename type 'TheStargateCommand'
+1308478988539	Rename field 'nPlanets'
+1308479111967	Rename local variable 'leftPlanets'
+1308479179331	Rename local variable 'planetMinTravel'
+1308479372866	Rename local variable 'newPlanet'
+1308479401647	Rename local variable 'minDist'
+1308479417449	Rename local variable 'planet'
+1308479449043	Rename local variable 'actualPlanet'
+1308480682995	Delete element
+1308484831918	Delete element
+1308503334040	Delete element

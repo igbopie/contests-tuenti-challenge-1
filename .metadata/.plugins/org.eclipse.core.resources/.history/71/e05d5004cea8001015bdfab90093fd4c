@@ -1,0 +1,68 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+/**
+ * This a solution for the ninesquare problem.
+ * @author ignaciobonapiedrabuena
+ *
+ */
+public class Solution {
+
+
+	
+
+	static boolean hasConflicts(int[] starts, int[] ends) {
+	        //O(nlog(n))
+	    for(int meetingA=0;meetingA<starts.length;meetingA++){
+	    	//We don't check twice
+	        for(int meetingB=(meetingA+1);meetingB<starts.length;meetingB++){    
+	            if( meetingA!=meetingB&&
+	                conflict(starts[meetingA],ends[meetingA],starts[meetingB],ends[meetingB])
+	            ){
+	                return true;
+	            }
+	        }    
+	    }
+	    return false;
+	}
+	static boolean conflict(int startA,int endA,int startB,int endB){
+	     return startA<startB&&endA>startB||startB<startA&&endB>startA;
+	}
+	public static void main(String[]args){
+		int[]starts1 = {10,5,1,15};
+		int[]ends1 =   {15,7,5,19};
+		assertFalse(hasConflicts(starts1,ends1));
+
+
+		int[]starts2 = {10,5,1,14};
+		int[]ends2 =   {15,7,5,19};
+		assertTrue(hasConflicts(starts2,ends2));
+		
+
+		int[]starts3 = {10,5,1,15};
+		int[]ends3 =   {15,11,5,19};
+		assertTrue(hasConflicts(starts3,ends3));
+		
+
+		int[]starts4 = {10,5,1,15};
+		int[]ends4 =   {15,7,8,19};
+		assertTrue(hasConflicts(starts4,ends4));
+	}
+	
+	public static void assertTrue(boolean value){
+		if(value){
+			System.out.println("TEST OK");
+		}else{
+			System.out.println("TEST KO");
+		}
+	}
+	public static void assertFalse(boolean value){
+		if(value){
+			System.out.println("TEST KO");
+		}else{
+			System.out.println("TEST OK");
+		}
+	}
+
+}

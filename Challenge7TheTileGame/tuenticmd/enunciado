@@ -1,0 +1,80 @@
+1st Tuenti Programming Contest
+Tuenti Programming Contest Contest Stats Tools Sample Help       Logout
+Challenge 7: The Tile Game
+You are playing a game. You are given small wooden tiles, each with a sign on it, e.g:
+
+
+
+Given two ordered sets of tiles, the game is to find the cheapest way to transform the first set into the second, e.g.
+
+
+
+The possible operations are:
+Add a new tile (from the set of all tiles)
+Remove a tile
+Exchange the current tile with any other tile (from the set of all tiles)
+Each operation has a different price, e.g. adding a new tile in a place costs 1, removing a tile from its place costs 3, and replacing one tile with another costs 2, like in the following examples:
+
+ 
+Figure 1: Example of adding a  tile, costing 1.
+
+Depending on the price, sometimes it could be cheaper to remove one tile and add another, instead of exchanging them.
+
+ 
+Figure 2: Example of deleting a  tile, costing 3.
+
+ 
+Figure 3: Example of replacing a   tile with a  tile, costing 2.
+
+Input and output are received fromt the standard input and output streams.
+
+Input Two ordered set of tiles represented as UTF-8 characters, and a comma-separated list of prices in the following order: adding price, deleting price, swapping price, e.g.
+
+ 
+Figure 4: Example input arguments for the game
+
+For this input, the minimal price is to remove the  tile, and replacing the  tile with the  tile, thus costing 5 in total: 3 for removing the  and 2 for replacing the  tile with the  tile.
+
+Output Integer representing the minimal cost found.
+
+
+Example inputs and outputs (with prices remaining 1,3,2):
+
+
+ 
+Figure 5: Example of inputs and outputs
+
+Sample input
+123 345 1,1,1
+abcdefg badfscg 2,2,1
+Sample output
+3
+6
+Submit & test your code
+To test and submit code we provide a set of tools to help you. Download contest tools if you don't have done that already. Then with the challenge token you will be able to test and submit your solution to this challenge.
+Challenge token: AiujWSQStYnCu9YwT7wS
+
+To test your program
+./test_challenge AiujWSQStYnCu9YwT7wS path/program
+A nice output will tell you if your program got the right solution or not. You can try as many times as you need.
+To submit your program to the challenge
+./submit_challenge AiujWSQStYnCu9YwT7wS path/source_pkg.tgz path/program
+Note that you first need to solve the test phase before submiting the code. On the submit phase we could give your program harder questions, so try to make your program failsafe.
+Remind you can only submit once!. Once your solution is submitted you won't be able to amend it to fix issues or make it faster, so please be sure your program is finished before submitting it.
+If you have any doubts, please check the help section.
+Go ahead
+I'm done! :)
+Once you have submitted your code, hit refresh and continue to next challenge.
+I'm stuck! :(
+Be sure yo follow Tuenti Engineering twitter for updates and possible hints during the contest.
+If this challenge is too hard and you are blocked, you will be able to skip it after two hours. Note that you won't be able to complete it later, and you have a limited number of challenges to skip.
+Finally if you run out of skips but continue really stuck with one problem, after 24 hours you will be able to skip it too.
+
+Challenge status:
+Test case	 Not done
+Solution submited	 Not done
+Skip	You still have to wait 2h, 0m and 0s to be able to skip this challenge
+
+Refresh status
+ 
+tuenti

@@ -1,0 +1,3 @@
+#Sat Jun 11 14:32:03 CEST 2011
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="new BigInteger(number)"/>\n<expression enabled\="true" text\="new BigInteger(&quot;3&quot;)"/>\n<expression enabled\="true" text\="number.replaceAll(&quot;\\+&quot;,&quot;&quot;)"/>\n</watchExpressions>\n
+eclipse.preferences.version=1
